@@ -102,7 +102,7 @@ module Boxr
       download_file(file, version: version, follow_redirect: false)
     end
 
-    def upload_file(path_to_file, parent, name: nil, content_created_at: nil, content_modified_at: nil,
+    def upload_file(path_to_file, parent, name = nil, content_created_at: nil, content_modified_at: nil,
                     preflight_check: true, send_content_md5: true)
 
       parent_id = ensure_id(parent)
